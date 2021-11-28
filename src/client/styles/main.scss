@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+$font-stack: "Nunito", sans-serif;
+
+$p-color: #929da6;
+$button-background: #b5e0e9;
+$input-background: #e4eff8;
+$error-color: #fff;
+$main-background-color: #013d47;
+$radius-50: 50px;
+$padding-15: 15px;
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: $font-stack;
+    background-image: url(/src/client/media/background.svg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: $main-background-color;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 70px;
+    }
+
+    .contact-us {
+        padding: 30px;
+        max-width: 500px;
+        min-width: 200px;
+        border-radius: 10px;
+        text-align: center;
+
+        .description {
+            color: #ff8b00;
+            font-size: 50px;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: $padding-15;
+        }
+
+        input {
+            border: unset;
+            background-color: $input-background;
+            padding: $padding-15;
+            font-size: 16px;
+            border-radius: $radius-50;
+            width: 250px;
+            margin-bottom: 12px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        input#date {
+            color: #757575;
+        }
+
+        button {
+            background-color: $button-background;
+            color: #03292a;
+            border: unset;
+            width: 125px;
+            border-radius: $radius-50;
+            padding: $padding-15;
+            cursor: pointer;
+            font-size: 16px;
+
+            &:focus {
+                outline: none;
+            }
+
+            &:hover {
+                background-color: #6ba0a5;
+                color: #fff;
+            }
+        }
+
+        .results {
+            font-size: 20px;
+            color: $p-color;
+        }
+
+        .error {
+            color: $error-color;
+        }
+    }
+
+    .content-holder {
+        text-align: center;
+        padding: 30px;
+
+        .entry-holder {
+            color: #fff;
+            font-size: 20px;
+        }
+
+        img {
+            border-radius: 40px;
+        }
+    }
+
+    .page-footer {
+        font-size: 1rem;
+        color: #fff;
+        margin-top: 40px;
+
+        span {
+            font-size: 18px;
+        }
+    }
+
+    footer {
+        margin-top: auto;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .wrapper {
+        main {
+            margin-top: 170px;
+        }
+
+        .contact-us {
+            padding: 0px;
+        }
+
+        .content-holder {
+            .entry-holder {
+                padding: 0px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        main {
+            margin-top: 190px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .wrapper {
+        main {
+            margin-top: 190px;
+        }
+
+        .contact-us {
+            max-width: 200px;
+
+            .description {
+                font-size: 40px;
+            }
+        }
+    }
+}

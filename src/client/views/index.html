@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=0.8" />
+        <title>NLP App</title>
+    </head>
+
+    <body>
+        <section class="wrapper">
+            <header></header>
+
+            <main>
+                <section class="contact-us">
+                    <div class="description">
+                        <p>
+                            Travel app
+                        </p>
+                    </div>
+                    <form class="form" onsubmit="return Client.handleSubmit(event)">
+                        <input
+                            id="location"
+                            type="text"
+                            name="input-location"
+                            value=""
+                            placeholder="Please enter city"
+                        />
+                        <input
+                            id="date"
+                            type="date"
+                            name="input-date"
+                            value=""
+                            placeholder="Please enter the date"
+                        />
+                        <button
+                            type="button"
+                            name=""
+                            onclick="return Client.handleSubmit(event)"
+                            onsubmit="return Client.handleSubmit(event)"
+                        >
+                            Submit
+                        </button>
+                        <div class="error"></div>
+                    </form>
+                </section>
+                <section class="content-holder" hidden>
+                    <div class="entry-holder">
+                      <div class="info"></div>
+                      <div class="forecast"></div>
+                      <div class="img"></div>
+                    </div>
+                </section>
+            </main>
+
+            <footer>
+                <div class="page-footer">
+                    <small>
+                        Made <span>👨‍💻</span> by Evgeny Tolkachev</a>
+                    </small>
+                </div>
+            </footer>
+        </section>
+        <!-- <script>
+            // Check that service workers are supported
+            if ("serviceWorker" in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener("load", () => {
+                    navigator.serviceWorker.register("/service-worker.js");
+                });
+            }
+        </script> -->
+    </body>
+</html>
