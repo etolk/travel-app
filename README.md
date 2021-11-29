@@ -1,4 +1,4 @@
-# Udacity Evaluate News Article project
+# Udacity Travel App project
 
 ## [Demo](https://udacity-travel-application.herokuapp.com/)
 ## Overview
