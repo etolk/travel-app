@@ -1,12 +1,14 @@
 # Udacity Evaluate News Article project
 
-## [Demo](https://udacity-nlp-app.herokuapp.com/)
+## [Demo](https://udacity-travel-application.herokuapp.com/)
 ## Overview
 This project is a part of the [Front End Web Developer](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd0011) nanodegree program.
-The app allows users to run Sentiment Analysis (also known as opinion mining or emotion AI) on articles or blogs found on other websites. Sentiment Analysis is a sub-field of Natural Language Processing (NLP) that tries to identify and extract opinions within a given text across blogs, reviews, social media, forums, news etc.
+The travel app that obtains a desired trip location & date from the user, and displays weather and an image of the location using information obtained from external APIs.
 
 ## References
-Sentiment Analysis performed by [MeaningCloud.com](https://www.meaningcloud.com/developer/sentiment-analysis).
+- Сoordinates performed by [geonames.org](https://www.geonames.org/)
+- Weather performed by [weatherbit.io](https://www.weatherbit.io/)
+- Images performed by [pixabay.com](https://pixabay.com/)
 
 ## Built With
 - HTML
@@ -18,8 +20,12 @@ Sentiment Analysis performed by [MeaningCloud.com](https://www.meaningcloud.com/
 - Jest
 - Workbox Service Worker
 
-## Get credentials for [Meaning Cloud API](https://www.meaningcloud.com)
-Insert the API key inside the `.env_smaple` file and rename it to `.env`
+## Credentials
+- [geonames.org](https://www.geonames.org/)
+- [weatherbit.io](https://www.weatherbit.io/)
+- [pixabay.com](https://pixabay.com/)
+
+Insert the API keys inside the `.env_smaple` file and rename it to `.env`
 
 ## Getting Started
 - `npm install`
